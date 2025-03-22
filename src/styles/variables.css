@@ -1,0 +1,21 @@
+:root {
+  --gradient-primary: linear-gradient(137deg, #da28ff 3.34%, #7fccff 92.15%);
+  --gradient-secondary: linear-gradient(
+    196.56deg,
+    rgba(0, 0, 0, 9.5e-5) 10.43%,
+    rgba(21, 5, 52, 0.641925) 17.66%,
+    rgba(0, 0, 0, 0.855327) 37.66%,
+    rgba(9, 1, 25, 0.95) 45.57%,
+    rgba(0, 0, 0, 0.95) 77.38%,
+    rgba(5, 1, 14, 0.95) 94.32%
+  );
+
+  --white: #fff;
+  --black: #000;
+
+  --blue-100: #141131;
+  --blue-200: #070b33;
+
+  --purple: #d613fc9e;
+  --pink: #ff82e43c;
+}
