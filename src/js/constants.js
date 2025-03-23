@@ -13,3 +13,13 @@ export const APP_CONTENT_VALUES = {
   policy: 'Privacy Policy',
   restore: 'Restore',
 };
+
+export const LIST_OF_ELEMENTS_WITHOUT_WRAP = [
+  document.querySelectorAll('.info_title'),
+  document.querySelectorAll('.info_subtitle'),
+  document.querySelectorAll('.price p'),
+  document.querySelectorAll('.privacy a'),
+];
+
+export const AVAILABLE_LANGUAGES = ['de', 'en', 'es', 'fr', 'ja', 'pt'];
+export const DEFAULT_LANGUAGE = 'en';
