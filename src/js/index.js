@@ -28,6 +28,10 @@ const loadLanguageFile = async (lang) => {
 
 loadLanguageFile(lang);
 
+document.addEventListener('DOMContentLoaded', () => {
+  configureSubmitAction();
+});
+
 const purchaseSelectors = document.querySelectorAll('.purchase');
 
 const handleClick = (purchase) => {
