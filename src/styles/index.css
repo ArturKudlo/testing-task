@@ -1,7 +1,19 @@
 @import url('./variables.css');
+@import url('./header-styles.css');
+@import url('./main-styles.css');
 
 body {
   font-family: -apple-system, 'SF Pro Display', sans-serif;
   background: var(--gradient-primary);
   margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 100vh;
+  background: var(--gradient-secondary);
+  position: relative;
+  overflow: hidden;
 }
