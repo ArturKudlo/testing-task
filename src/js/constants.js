@@ -23,3 +23,8 @@ export const LIST_OF_ELEMENTS_WITHOUT_WRAP = [
 
 export const AVAILABLE_LANGUAGES = ['de', 'en', 'es', 'fr', 'ja', 'pt'];
 export const DEFAULT_LANGUAGE = 'en';
+
+export const PURCHASE_URLS = {
+  apple: 'https://apple.com/',
+  google: 'https://www.google.com/',
+};

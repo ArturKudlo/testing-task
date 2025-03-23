@@ -2,7 +2,7 @@ import '../styles/normalize.css';
 import '../styles/fonts.css';
 import '../styles/index.css';
 
-import { renderText } from './utils';
+import { renderText, configureSubmitAction } from './utils';
 
 import { AVAILABLE_LANGUAGES, DEFAULT_LANGUAGE } from './constants';
 
@@ -27,3 +27,25 @@ const loadLanguageFile = async (lang) => {
 };
 
 loadLanguageFile(lang);
+
+const purchaseSelectors = document.querySelectorAll('.purchase');
+
+const handleClick = (purchase) => {
+  purchaseSelectors.forEach((item) => {
+    item.classList.remove('active');
+    const badge = item.querySelector('.badge');
+    if (badge) badge.classList.remove('active');
+  });
+
+  purchase.classList.add('active');
+  const badge = purchase.querySelector('.badge');
+  if (badge) badge.classList.add('active');
+
+  configureSubmitAction(purchase);
+};
+
+purchaseSelectors.forEach((purchase) => {
+  purchase.addEventListener('click', () => {
+    handleClick(purchase);
+  });
+});
