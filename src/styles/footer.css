@@ -20,10 +20,7 @@ footer {
 
 .privacy a {
   color: rgba(255, 255, 255, 0.5);
-}
-
-.privacy a:not(:last-child) {
-  margin-right: 3vw;
+  margin-right: 2.5vw;
 }
 
 @media only screen and (min-width: 375px) and (min-height: 812px) and (-webkit-min-device-pixel-ratio: 3) {

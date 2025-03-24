@@ -20,3 +20,7 @@ li {
 button {
   border: none;
 }
+
+li {
+  list-style: none;
+}
